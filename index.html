@@ -21,5 +21,14 @@
         }
     </style>
     <button>CLICK ME</button>
+    <div class="container">HERE WI WILL APPEND THE NEW CREATED ELEMENT</div>
+    <script>
+        function onClickEvent() {
+            const el = document.createElement('p');
+            el.innerText = 'Cliccked the button';
+            document.querySelector('.container').appendChild(el);
+        }
+        document.querySelector('button').onclick = onClickEvent;
+    </script>
 </body>
 </html>
